@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+		<link rel="stylesheet" type="text/css" href="css/login.css" />
+	</head>
+
+	<body>
+		<div id="box">
+			<div id="cut">我要登录</div>
+			<div id="registered" style="display:block;">
+				<h2>注册</h2>
+				<form action="http://127.0.0.1:7777/add/registered" method="post" id="registered_form">
+					<span>用户名:</span><input type="text" placeholder="注册用户名" name="username" /><br />
+					<span>密码:</span><input type="password" placeholder="注册密码" name="password" /><br />
+					<span>确认密码:</span><input type="password" placeholder="确认密码" name="password" /><br />
+					<div id="Tips"></div>
+					<input type="button" value="提交注册" id="tjzc" />
+				</form>
+			</div>
+			<div id="login" style="display:none;">
+			<h2>请先登录</h2>
+			<form action="" method="get" id="login_form">
+				<span>用户名:</span><input type="text" placeholder="用户名" /><br />
+				<span>密码:</span><input type="password" placeholder="请输入密码" /><br />
+				<input type="button" value="登录主页" id="tjdl"/>
+			</form>
+			</div>
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/login.js"></script>
+	</body>
+
+</html>
